@@ -1,0 +1,128 @@
+:root {
+  --layout-bg: rgb(200, 155, 116);
+  --layout-text: rgb(197, 103, 40);
+  --content-bg: grey;
+  --content-text: black;
+  --action-text: white;
+
+}
+html {
+  font: 1em sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.form-cv {
+  background-color: var(--content-bg);
+  color: var(--content-text);
+  width: 500px;
+  border: 5px solid black;
+  margin: 20px auto;
+  padding: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: left;
+}
+.form-cv .cvForm {
+  flex: 0 1 75%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px auto;
+  padding: 30px
+}
+
+.form-cv .cvForm input {
+  padding: 5px 6px;
+  flex: 5 2;
+  /*width: 30em; */
+  margin: 1%;
+}
+.form-cv .cvForm label {
+  font-weight: bold;
+  flex: 3 1;
+  padding: 5px 6px;
+  margin: 1%;
+}
+.form-cv .cvForm .short-column {
+  display: flex;
+  flex: 0 1 12%;
+  flex-flow: column;
+  align-items: center;
+}
+.form-cv .cvForm .short-column label {
+  flex: 0 1 18%;
+  padding: 0;
+  justify-content: center;
+  align-content: space-around;
+}
+.form-cv .cvForm .short-column input[type="checkbox"]:focus {
+  flex: 0 1 20%;
+  padding: 0;
+  justify-content: center;
+  align-content: space-around;
+  color: red;
+}
+
+.form-cv .cvForm .short-column input[type="checkbox"] {
+  flex: 0 1 20%;
+  padding: 0;
+  justify-content: center;
+  color: yellow;
+}
+
+.form-cv button {
+  background-color: red;
+  flex: 3 1;
+  align-self: center;
+  width: 10rem;
+  color: white;
+  padding: 5px 6px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+}
+.form-cv button:disabled {
+  background-color: gray;
+}
+.form-cv input {
+  width: 30%;
+  padding: 5px 6px;
+  margin: 1%;
+}
+.form-cv label {
+  width: 10%;
+  font-weight: bold;
+  padding: 5px 6px;
+  margin: 1%;
+}
+
+.form-cv .radio-box {
+  background-color: var(--content-bg);
+  color: var(--content-text);
+  width: 100%;
+  margin: 5% auto;
+  
+}
+.form-cv .radio-box blockquote{
+  display: flex;
+  justify-content: center;
+}
+
+.form-cv .radio-box label {
+  padding: 5px 6px; 
+  margin: 0 5% 0 10%;
+}
+
+.form-cv .radio-box select {
+  width: 50%;
+  margin: 0 10% 0 5%;
+  padding: 5px 6px; 
+}
+
+.form-cv .info-msg {
+  color: var(--layout-text);
+  font-size: 0.25em;
+}
+

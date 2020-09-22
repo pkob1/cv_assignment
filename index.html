@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "styles.css">
+    <title>CV store</title>
+</head>
+<body>
+    <form id="addForm" class="form-cv" method="GET" >
+        <h1 style = "text-align:center;">Enter Your Details Here:</h1>
+        <div class="cvForm">
+            <label for="first">First</label>
+            <input type="text" id="first" name="firstName"  placeholder="Your First Name">
+        </div>
+        
+        <div class="cvForm">
+            <label for="first">Middle</label>
+            <input type="text" id="middle" name="middleName"  placeholder="Your Middle Name">
+        </div>
+      
+            <div class="cvForm">
+                <label for="last">Last</label>
+                <input type="text" id="last" name="lName" placeholder="Your Last Name">
+        </div>
+        
+      <div class="cvForm">
+            <label for="number">Phone Number</label>
+            <input type="tel" id = "number" placeholder="Your Phone Number">
+        </div>
+      
+      <div class="cvForm">
+            <label for="email">E-mail</label>
+            <input type="text" id = "email" placeholder="Your E-mail">
+        </div>
+      
+      <div class="cvForm">
+            <label for="address">Address</label>
+            <input type="text" id = "address" placeholder="Your Address">
+        </div>
+
+        <div class="radio-box">
+          <blockquote>
+            <label for="gender">Gender</label>
+            <select name = "Gender" id = "gender">
+              <option value=""> Choose Gender </option>
+              <option value = "Male">Male</option>
+              <option value = "Female">Female</option>
+            </select>
+          </blockquote>
+        </div>  
+      
+        <button id="cvGenerate"type="button" value="Submit" onclick="cvData()">Generate CV</button>
+          
+  </form>
+  
+   
+</body>
+<script src="index.js"></script>
+</html>
+
