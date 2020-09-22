@@ -56,7 +56,7 @@ function validateForm(){
         return false;
     }
 
-    if(mail == "" || !mail.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)){
+    if(mail == "" || !mail.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
         window.alert("Field(s) is/are empty or was/were not filled properly");
         return false;
     }
