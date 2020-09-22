@@ -51,7 +51,7 @@ function validateForm(){
         return false;
     }
 
-    if(number == ""){
+    if(number == "" || !number.match(/^[-+]?[0-9]+$/)){
         window.alert("Field(s) is/are empty or was/were not filled properly");
         return false;
     }
